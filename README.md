@@ -1,73 +1,125 @@
-# Welcome to your Lovable project
+# 🎥 RoomSync – Social Movie Rooms + AI Movie Assistant
 
-## Project info
+Welcome to RoomSync, a sci-fi-styled, AI-powered movie web app where users can create watch rooms, explore films, and receive intelligent, personalized recommendations — all backed by Firebase.
 
-**URL**: https://lovable.dev/projects/d043a29f-e401-44df-ae1f-a3a83e9283ad
+🚀 “Your movies, your friends, your AI. All in sync.”
 
-## How can I edit this code?
+## 🧹 Key Features
 
-There are several ways of editing your application.
+### 👥 Watch Rooms
+- Create or join synchronized movie watch rooms
+- Chat live with friends
+- Vote on the next movie to watch
+- Privacy controls: Public, Invite-Only, or Private
 
-**Use Lovable**
+### 🧠 AI Movie Assistant (Movie-GPT)
+- Smart movie chatbot powered by OpenAI
+- Understands genre, mood, actor, or story-based prompts
+- Greets users upon login using their name
+- Learns from movies watched and genres liked
+- Recommends films based on personal watch behavior
+- Allows adding movies to categorized lists:
+  - Watching
+  - Planned
+  - Completed
+  - Favorites
+  - Hidden Gems
+  - Avoided
+  - Rewatching
+  - Curious About
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d043a29f-e401-44df-ae1f-a3a83e9283ad) and start prompting.
+#### AI Section UI:
+- Full-page, immersive sci-fi theme
+- Flashy animated backgrounds
+- Interactive slideshow of suggested movies
+- Themed icons and futuristic design elements
+- Voice + text interaction support
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🌌 Personalized Dashboard
+- Tracks your watch activity
+- Displays viewing trends, preferences, and stats
+- Manage your lists, room history, and profile
 
-**Use your preferred IDE**
+### 🎬 Movie Explorer
+- Browse movies by genre, actor, release year, or vibe
+- Powered by TMDB or OMDB APIs
+- “Ask AI About This Movie” button on movie details
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧱 Tech Stack
+- **Frontend**: React + HTML/CSS/JS
+- **Backend**: Firebase Cloud Functions
+- **AI Layer**: OpenAI GPT API
+- **Database**: Firebase Firestore
+- **Authentication**: Firebase Auth
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📁 Project Structure
+/roomsync/ ├── public/ │ └── index.html ├── src/ │ ├── components/ │ ├── pages/ │ ├── ai/ │ └── App.js ├── firebase/ │ ├── functions/ │ └── config.js ├── .env ├── README.md └── package.json
 
-Follow these steps:
+Code
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ⚙️ Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Clone the Repository
 
-# Step 3: Install the necessary dependencies.
-npm i
+git clone https://github.com/your-username/roomsync.git
+cd roomsync
+Install Dependencies
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+npm install
 
-**Edit a file directly in GitHub**
+Firebase Setup
+Create a Firebase project: Firebase Console
+Enable the following:
+Authentication
+Cloud Firestore
+Hosting
+Add a .env file in the root directory with your config:
+env
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_OPENAI_KEY=your_openai_api_key
+Run Locally
+bash
+npm run start
+🧠 AI Capabilities
+OpenAI GPT integrated as your personal movie assistant
+Remembers your account and behavior
+Recommends movies by analyzing your:
+Watch history
+Genre preferences
+Chat input
+Built as a fully-themed, interactive AI page with:
+Sci-fi backgrounds
+Slideshow of titles
+Voice (optional) and text input
+📡 Hosting
+Hosted on Firebase Hosting
+Real-time database updates via Firestore listeners
+Deployment:
+bash
+firebase deploy
+✨ Future Enhancements
+Voice chat in synchronized rooms
+Mobile app version using Flutter
+Admin dashboard for content moderation
+Social timelines, shared lists, and reactions
+Multi-language support and subtitle customization
+🤝 Contributing
+We welcome contributions from the community!
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To Contribute:
+Fork the repository
+Create a feature branch
+Make your changes
+Submit a pull request
+🛡 License
+MIT License © 2025 [133x-bit]
 
-**Use GitHub Codespaces**
+💬 Contact
+Have feedback or want to collaborate?
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+📧 Email: 133scylla@gmail.com
+🌐 Website: yourdomain.com
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d043a29f-e401-44df-ae1f-a3a83e9283ad) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+RoomSync – “Located in the Clouds. Powered by the Crowd. Recommended by AI.”
